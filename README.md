@@ -2,26 +2,16 @@
 
 ## Overview
 
-This repo is a skeleton/template repo for tracking dotfiles.  It contains
+This repo is base on a skeleton/template repo for tracking dotfiles.  It contains
 a utility ([dfm](https://github.com/justone/dfm)) to help with managing and
-updating your dotfiles.
+updating your dotfiles plus very few dotfiles. 
 
 ## Using this repo
 
-First, fork this repo.
-
-Then, add your dotfiles:
-
-    $ git clone git@github.com:username/dotfiles.git .dotfiles
-    $ cd .dotfiles
-    $  # edit files
-    $  # edit files
-    $ git push origin master
-
-Finally, to install your dotfiles onto a new system:
+To install your dotfiles onto a new system:
 
     $ cd $HOME
-    $ git clone git@github.com:username/dotfiles.git .dotfiles
+    $ git clone git@github.com:BenoitTigeot/dotfiles.git .dotfiles
     $ ./.dotfiles/bin/dfm install # creates symlinks to install files
 
 ## Full documentation
