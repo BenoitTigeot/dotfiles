@@ -13,3 +13,5 @@ eval "$(rbenv init -)"
 #alias
 alias dfm=".dotfiles/bin/dfm"
 alias sublime="/Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl"
+
+#. $HOME/.shellrc.load
