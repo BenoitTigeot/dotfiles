@@ -21,13 +21,16 @@ set noerrorbells         " don't beep
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
+" Needed for HelpTags and Bundle
+"source bundles.vim
+
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 " let Vundle manage Vundle, required
 Plugin 'gmarik/Vundle.vim'
-Plugin 'tpope/vim-fugitive'
+"Plugin 'tpope/vim-fugitive'
 Plugin 'kien/ctrlp.vim'
 Plugin 'scrooloose/nerdtree'
 

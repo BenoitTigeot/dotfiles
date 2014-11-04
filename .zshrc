@@ -6,12 +6,15 @@ plugins=(git rails ruby vagrant osx terminalapp nyan common-aliases)
 source $ZSH/oh-my-zsh.sh
 
 # export PATH source
-source ~/.zshrc_export_path
-
+# source ~/.zshrc_export_path
+#
 eval "$(rbenv init -)"
-
-#alias
+#
+# #alias
 alias dfm=".dotfiles/bin/dfm"
-alias sublime="/Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl"
+#alias sublime="/Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl"
+#
+# #. $HOME/.shellrc.load
 
-#. $HOME/.shellrc.load
+#NVM
+source ~/.nvm/nvm.sh
