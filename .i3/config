@@ -47,7 +47,7 @@ bindsym $mod+Return exec xfce4-terminal
 #bindsym $mod+Shift+R exec ranger
 
 #Start Thunderbird
-bindsym $mod+Shift+t exec claws-mail 
+bindsym $mod+Shift+t exec thunderbird 
 assign [class="mail"] 3
 
 # start Firefox
