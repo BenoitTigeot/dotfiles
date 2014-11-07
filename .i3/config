@@ -24,7 +24,7 @@ exec xset s off
 exec xset -dpms 
 
 # Assign Thunderbird to workspace 3
-assign [class="mail"] $3
+assign [class="Thunderbird"] $3
 
 #Applet NetworkManager
 exec nm-applet --sm-disable
