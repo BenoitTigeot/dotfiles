@@ -13,6 +13,7 @@ Plugin 'kien/ctrlp.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'bling/vim-airline'
 Plugin 'terryma/vim-expand-region'
+Plugin 'ntpeters/vim-better-whitespace'
 
 call vundle#end()            " required
 
@@ -45,6 +46,10 @@ set noerrorbells         " don't beep
 set laststatus=2
 " let g:airline_powerline_fonts = 1
 set t_Co=256
+
+" vim markdown
+au BufRead,BufNewFile *.md set filetype=markdown
+
 
 """""" map
 " window movements
