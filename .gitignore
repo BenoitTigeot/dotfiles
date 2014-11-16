@@ -44,7 +44,7 @@ build/
 Session.vim
 .netrwhist
 *~
-
+.vim/bundle
 
 ### OSX ###
 .DS_Store
