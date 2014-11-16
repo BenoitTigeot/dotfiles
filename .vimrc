@@ -14,6 +14,7 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'bling/vim-airline'
 Plugin 'terryma/vim-expand-region'
 Plugin 'ntpeters/vim-better-whitespace'
+Plugin 'hynek/vim-python-pep8-indent'
 
 call vundle#end()            " required
 
@@ -23,8 +24,8 @@ filetype plugin indent on
 syntax enable
 set number
 set autoindent
-set ruler    
-set expandtab 
+set ruler
+set expandtab
 set tabstop=4
 set showmatch
 set smartcase
@@ -69,3 +70,5 @@ nmap <CR> o<Esc>
 vmap v <Plug>(expand_region_expand)
 vmap <C-v> <Plug>(expand_region_shrink)
 
+" select matching bracket
+noremap % v%
