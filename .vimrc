@@ -32,6 +32,9 @@ set smartcase
 set ignorecase
 set hlsearch
 set t_vb=
+set undofile
+set shiftwidth=2
+
 " theme
 set background=dark
 

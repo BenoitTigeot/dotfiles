@@ -1,8 +1,7 @@
-# i3 config file (v4)
-#
-# Please see http://i3wm.org/docs/userguide.html for a complete reference!
-
+# Default key for shortcuts
 set $mod Mod4
+
+# i3 config file (v4)
 
 # font for window titles. ISO 10646 = Unicode
 font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
@@ -20,8 +19,8 @@ exec xrandr --output VGA1 --auto --right-of LVDS1
 assign [class="Firefox"] $2
 
 # Disable blankscreen
-exec xset s off 
-exec xset -dpms 
+exec xset s off
+exec xset -dpms
 
 # Assign Thunderbird to workspace 3
 assign [class="Thunderbird"] $3
@@ -47,7 +46,7 @@ bindsym $mod+Return exec xfce4-terminal
 #bindsym $mod+Shift+R exec ranger
 
 #Start Thunderbird
-bindsym $mod+Shift+t exec thunderbird 
+bindsym $mod+Shift+t exec thunderbird
 assign [class="mail"] 3
 
 # start Firefox
