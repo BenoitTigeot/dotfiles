@@ -34,6 +34,9 @@ set hlsearch
 set t_vb=
 set undofile
 set shiftwidth=2
+set scrolloff=3
+set showcmd
+set ruler
 
 " theme
 set background=dark
@@ -75,3 +78,4 @@ vmap <C-v> <Plug>(expand_region_shrink)
 
 " select matching bracket
 noremap % v%
+

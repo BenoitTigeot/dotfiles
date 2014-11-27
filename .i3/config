@@ -32,9 +32,9 @@ exec nm-applet --sm-disable
 exec parcellite
 
 #WorkspaceNamp
-set $1
-set $2
-set $3
+#set $1
+#set $2
+#set $3
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
