@@ -15,6 +15,9 @@ Plugin 'bling/vim-airline'
 Plugin 'terryma/vim-expand-region'
 Plugin 'ntpeters/vim-better-whitespace'
 Plugin 'hynek/vim-python-pep8-indent'
+Plugin 'fatih/vim-go'
+Plugin 'scrooloose/syntastic'
+Plugin 'rjohnsondev/vim-compiler-go'
 
 call vundle#end()            " required
 
@@ -37,6 +40,7 @@ set shiftwidth=2
 set scrolloff=3
 set showcmd
 set ruler
+set backspace=indent,eol,start
 
 " theme
 set background=dark
@@ -44,6 +48,7 @@ set background=dark
 " History
 set history=1000         " remember more commands and search history
 set undolevels=1000      " use many muchos levels of undo
+
 set title                " change the terminal's title
 set visualbell           " don't beep
 set noerrorbells         " don't beep
@@ -51,12 +56,15 @@ set noerrorbells         " don't beep
 " airline
 " set rtp+=$HOME/.local/lib/python2.7/site-packages/powerline/bindings/vim/
 set laststatus=2
+
 " let g:airline_powerline_fonts = 1
 set t_Co=256
 
 " vim markdown
 au BufRead,BufNewFile *.md set filetype=markdown
 
+" autosave when lost focus
+au FocusLost * :wa
 
 """""" map
 " window movements
@@ -68,6 +76,7 @@ nmap <silent> <A-Right> :wincmd l<CR>
 " buffer movement
 nnoremap <F5> :buffers<CR>:buffer<Space>
 nnoremap <C-n> :bnext<CR>
+
 " nnoremap <C-p> :bprevious<CR>
 nmap <S-Enter> O<Esc>
 nmap <CR> o<Esc>
