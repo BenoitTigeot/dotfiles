@@ -1,30 +1,29 @@
-# i3 config file (v4)
-#
-# Please see http://i3wm.org/docs/userguide.html for a complete reference!
-
+#Default key for shortcuts
 set $mod Mod4
 
-# font for window titles. ISO 10646 = Unicode
+#i3 config file (v4)
+
+#font for window titles. ISO 10646 = Unicode
 font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
 
-# Dropbox lauch
+#Dropbox lauch
 exec .dropbox-dist/dropboxd
 
-#Lancer xbindkeys
+#Lauch xbindkeys
 exec xbindkeys
 
 #Screen 2
 exec xrandr --output VGA1 --auto --right-of LVDS1
 
-# Assign iceweasel to workspace 2
-assign [class="Firefox"] $2
+#Assign iceweasel to workspace 2
+assign [class="Firefox"] 2
 
-# Disable blankscreen
-exec xset s off 
-exec xset -dpms 
+#Disable blankscreen
+exec xset s off
+exec xset -dpms
 
-# Assign Thunderbird to workspace 3
-assign [class="Thunderbird"] $3
+#Assign Thunderbird to workspace 3
+assign [class="Thunderbird"] 3
 
 #Applet NetworkManager
 exec nm-applet --sm-disable
@@ -33,9 +32,9 @@ exec nm-applet --sm-disable
 exec parcellite
 
 #WorkspaceNamp
-set $1  1:Irssi
-set $2  2:Web
-set $3  3:Mail
+#set $1
+#set $2
+#set $3
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
@@ -43,40 +42,25 @@ floating_modifier $mod
 # start a terminal
 bindsym $mod+Return exec xfce4-terminal
 
-#Start Ranger
-#bindsym $mod+Shift+R exec ranger
-
 #Start Thunderbird
-bindsym $mod+Shift+t exec thunderbird 
+bindsym $mod+Shift+t exec thunderbird
 assign [class="mail"] 3
 
-# start Firefox
+#start Firefox
 bindsym $mod+Shift+f exec firefox
 assign [class="firefox"] 2
 
-# kill focused window
+#kill focused window
 bindsym $mod+Shift+A kill
 
 # start dmenu (a program launcher)
 bindsym $mod+d exec dmenu_run
-
-# change focus
-#bindsym $mod+j focus left
-#bindsym $mod+k focus down
-#bindsym $mod+l focus up
-#bindsym $mod+m focus right
 
 # alternatively, you can use the cursor keys:
 bindsym $mod+Left focus left
 bindsym $mod+Down focus down
 bindsym $mod+Up focus up
 bindsym $mod+Right focus right
-
-# move focused window
-#bindsym $mod+Shift+J move left
-#bindsym $mod+Shift+K move down
-#bindsym $mod+Shift+L move up
-#bindsym $mod+Shift+M move right
 
 # alternatively, you can use the cursor keys:
 bindsym $mod+Shift+Left move left
@@ -107,13 +91,10 @@ bindsym $mod+space focus mode_toggle
 # focus the parent container
 bindsym $mod+q focus parent
 
-# focus the child container
-#bindcode $mod+d focus child
-
 # switch to workspace
-bindsym $mod+ampersand workspace $1
-bindsym $mod+eacute workspace $2
-bindsym $mod+quotedbl workspace $3
+bindsym $mod+ampersand workspace 1
+bindsym $mod+eacute workspace 2
+bindsym $mod+quotedbl workspace 3
 bindsym $mod+apostrophe workspace 4
 bindsym $mod+parenleft workspace 5
 bindsym $mod+minus workspace 6
@@ -123,9 +104,9 @@ bindsym $mod+ccedilla workspace 9
 bindsym $mod+agrave workspace 10
 
 # move focused container to workspace
-bindsym $mod+Shift+1 move workspace $1
-bindsym $mod+Shift+2 move workspace $2
-bindsym $mod+Shift+3 move workspace $3
+bindsym $mod+Shift+1 move workspace 1
+bindsym $mod+Shift+2 move workspace 2
+bindsym $mod+Shift+3 move workspace 3
 bindsym $mod+Shift+4 move workspace 4
 bindsym $mod+Shift+5 move workspace 5
 bindsym $mod+Shift+6 move workspace 6
@@ -142,8 +123,10 @@ bindsym $mod+shift+w move workspace to output left
 
 # reload the configuration file
 bindsym $mod+Shift+C reload
+
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 #bindsym $mod+Shift+X restart
+
 # exit i3 (logs you out of your X session)
 bindsym $mod+Shift+E exit
 

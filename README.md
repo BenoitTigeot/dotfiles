@@ -11,7 +11,7 @@ updating your dotfiles plus very few dotfiles.
 To install your dotfiles onto a new system:
 
     $ cd $HOME
-    $ git clone git@github.com:BenoitTigeot/dotfiles.git .dotfiles
+    $ git clone git@github.com:benoittgt/dotfiles.git .dotfiles
     $ ./.dotfiles/bin/dfm install # creates symlinks to install files
 
 ## Full documentation
