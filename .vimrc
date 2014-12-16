@@ -17,7 +17,7 @@ Plugin 'ntpeters/vim-better-whitespace'
 Plugin 'hynek/vim-python-pep8-indent'
 Plugin 'fatih/vim-go'
 Plugin 'scrooloose/syntastic'
-Plugin 'rjohnsondev/vim-compiler-go'
+" Plugin 'rjohnsondev/vim-compiler-go'
 
 call vundle#end()            " required
 
@@ -65,6 +65,9 @@ au BufRead,BufNewFile *.md set filetype=markdown
 
 " autosave when lost focus
 au FocusLost * :wa
+
+" don't show error when saving go file
+let g:go_fmt_fail_silently = 1
 
 """""" map
 " window movements

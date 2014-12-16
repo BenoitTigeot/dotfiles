@@ -22,3 +22,5 @@ source ~/.nvm/nvm.sh
 
 #Clean anoying warning when using git push
 unset GNOME_KEYRING_CONTROL
+alias slack="/usr/bin/chromium --app=https://simplon2.slack.com/messages/general/"
+alias phantomjs="/home/n3b/Downloads/phantomjs-1.9.8-linux-i686/bin/phantomjs"
