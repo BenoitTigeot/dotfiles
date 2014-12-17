@@ -15,11 +15,11 @@ Plugin 'bling/vim-airline'
 Plugin 'terryma/vim-expand-region'
 Plugin 'ntpeters/vim-better-whitespace'
 Plugin 'hynek/vim-python-pep8-indent'
-Plugin 'fatih/vim-go'
 Plugin 'scrooloose/syntastic'
 " Plugin 'rjohnsondev/vim-compiler-go'
+Plugin 'terryma/vim-multiple-cursors'
 
-call vundle#end()            " required
+call vundle#end()      " required
 
 filetype plugin indent on
 
@@ -35,7 +35,6 @@ set smartcase
 set ignorecase
 set hlsearch
 set t_vb=
-set undofile
 set shiftwidth=2
 set scrolloff=3
 set showcmd
@@ -54,7 +53,6 @@ set visualbell           " don't beep
 set noerrorbells         " don't beep
 
 " airline
-" set rtp+=$HOME/.local/lib/python2.7/site-packages/powerline/bindings/vim/
 set laststatus=2
 
 " let g:airline_powerline_fonts = 1
@@ -65,6 +63,8 @@ au BufRead,BufNewFile *.md set filetype=markdown
 
 " autosave when lost focus
 au FocusLost * :wa
+au FocusLost * silent! wa
+set autowrite
 
 " don't show error when saving go file
 let g:go_fmt_fail_silently = 1
