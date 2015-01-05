@@ -10,7 +10,7 @@ font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
 exec feh --bg-fill /home/n3b/Pictures/wallpaper.jpg
 
 #Dropbox lauch
-exec .dropbox-dist/dropboxd
+#exec .dropbox-dist/dropboxd
 
 #Lauch xbindkeys
 exec xbindkeys
