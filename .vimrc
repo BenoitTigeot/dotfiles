@@ -69,6 +69,7 @@ set autowrite
 " don't show error when saving go file
 let g:go_fmt_fail_silently = 1
 
+
 """""" map
 " window movements
 nmap <silent> <A-Up> :wincmd k<CR>
@@ -92,5 +93,5 @@ vmap <C-v> <Plug>(expand_region_shrink)
 noremap % v%
 
 " disable F1
-:nmap <F1> :echo<CR>
-:imap <F1> <C-o>:echo<CR>
+nmap <F1> :echo<CR>
+imap <F1> <C-o>:echo<CR>
