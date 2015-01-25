@@ -13,6 +13,7 @@ eval "$(rbenv init -)"
 #Alias
 alias dfm=".dotfiles/bin/dfm"
 alias tmux="tmux -2"
+alias g='vim --remote-silent'
 
 #NVM
 source ~/.nvm/nvm.sh
