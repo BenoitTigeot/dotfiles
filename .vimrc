@@ -45,6 +45,7 @@ set cpoptions+=$
 
 " theme
 set background=dark
+colorscheme molokai
 
 " History
 set history=1000         " remember more commands and search history
