@@ -41,6 +41,7 @@ set scrolloff=3
 set showcmd
 set ruler
 set backspace=indent,eol,start
+set cpoptions+=$
 
 " theme
 set background=dark
@@ -67,7 +68,7 @@ au FocusLost * :wa
 au FocusLost * silent! wa
 set autowrite
 
-" don't show error when saving go file
+" don't show warnings when saving go file
 let g:go_fmt_fail_silently = 1
 
 
@@ -78,9 +79,10 @@ nmap <silent> <A-Down> :wincmd j<CR>
 nmap <silent> <A-Left> :wincmd h<CR>
 nmap <silent> <A-Right> :wincmd l<CR>
 
-" buffer movement
-nnoremap <F5> :buffers<CR>:buffer<Space>
-nnoremap <C-n> :bnext<CR>
+nnoremap <C-j> <C-W>j
+nnoremap <C-k> <C-W>k
+nnoremap <C-h> <C-W>h
+nnoremap <C-l> <C-W>l
 
 " nnoremap <C-p> :bprevious<CR>
 nmap <S-Enter> O<Esc>
@@ -96,3 +98,9 @@ noremap % v%
 " disable F1
 nmap <F1> :echo<CR>
 imap <F1> <C-o>:echo<CR>
+
+" buffer movements
+map <up> <ESC>:ls<RETURN>
+map <down> <ESC>:buffer<RETURN>
+map <left> <ESC>:bp<SPACE>
+map <right> <ESC>:bn<RETURN>
