@@ -16,6 +16,7 @@ Plugin 'terryma/vim-expand-region'
 Plugin 'ntpeters/vim-better-whitespace'
 Plugin 'hynek/vim-python-pep8-indent'
 Plugin 'scrooloose/syntastic'
+Plugin 'fatih/vim-go'
 " Plugin 'rjohnsondev/vim-compiler-go'
 Plugin 'terryma/vim-multiple-cursors'
 

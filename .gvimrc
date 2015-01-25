@@ -13,8 +13,10 @@
 """"""""""""""""""""""""""""""""""""""""""""""""""
 set nocompatible                                  " désactivation de la compatibilité avec vi
 set background=dark                               " fond sombre
-colorscheme solarized                                " couleur
-syntax enable                                     " activation de la coloration syntaxique
+colorscheme molokai
+syntax on
+let g:molokai_original = 1
+let g:rehash256 = 1
 set number                                        " numérotation des lignes
 set autoindent                                    " indentation automatique avancée
 set smartindent                                   " indentation plus intelligente
@@ -50,6 +52,11 @@ autocmd BufEnter *.txt set filetype=text             " chargement du type de fic
 "Personnalisation de la barre de statut
 """"""""""""""""""""""""""""""""""""""""""""""""""
 set statusline=%t%m%r%h%w\ [FORMAT=%{&ff}]\ [TYPE=%Y]\ [FENC=%{&fileencoding}]\ [ASCII=\%03.3b]\ [HEX=\%02.2B]\ [POS=%04l,%04v]\ [%p%%]\ [LEN=%L]\ [TAG=%{Tlist_Get_Tagname_By_Line()}]
+
+""""""""""""""""""""""""""""""""""""""""""""""""""
+" Respect du background pour le theme molokai
+"""""""""""""""""""""""""""""""""""""""""""""""""
+let g:molokai_original = 1
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""
