@@ -102,6 +102,6 @@ imap <F1> <C-o>:echo<CR>
 
 " buffer movements
 map <up> <ESC>:ls<RETURN>
-map <down> <ESC>:buffer<RETURN>
+map <down> <ESC>:buffer<SPACE>
 map <left> <ESC>:bp<RETURN>
 map <right> <ESC>:bn<RETURN>
