@@ -43,6 +43,10 @@ set ruler
 set backspace=indent,eol,start
 set cpoptions+=$
 
+" swapfile in other place
+set swapfile
+set directory=~/.vim-tmp
+
 " theme
 set background=dark
 colorscheme molokai
@@ -71,7 +75,6 @@ set autowrite
 
 " don't show warnings when saving go file
 let g:go_fmt_fail_silently = 1
-
 
 """""" map
 " window movements
