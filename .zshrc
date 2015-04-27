@@ -21,3 +21,6 @@ source ~/.nvm/nvm.sh
 #Clean anoying warning when using git push
 unset GNOME_KEYRING_CONTROL
 alias slack="/usr/bin/chromium --app=https://simplon2.slack.com/messages/general/"
+
+#PATH go
+export PATH=$PATH:/usr/local/go/bin

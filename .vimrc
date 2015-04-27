@@ -17,10 +17,12 @@ Plugin 'ntpeters/vim-better-whitespace'
 Plugin 'hynek/vim-python-pep8-indent'
 Plugin 'scrooloose/syntastic'
 Plugin 'fatih/vim-go'
-" Plugin 'rjohnsondev/vim-compiler-go'
+Plugin 'tpope/vim-surround'
 Plugin 'terryma/vim-multiple-cursors'
+" Plugin 'sudar/vim-arduino-syntax'
+" Plugin 'rjohnsondev/vim-compiler-go'
 
-call vundle#end()      " required
+call vundle#end()
 
 filetype plugin indent on
 
@@ -44,8 +46,8 @@ set backspace=indent,eol,start
 set cpoptions+=$
 
 " swapfile in other place
-set swapfile
-set directory=~/.vim-tmp
+"set swapfile
+"set directory=~/.vim-tmp
 
 " theme
 set background=dark
@@ -75,6 +77,11 @@ set autowrite
 
 " don't show warnings when saving go file
 let g:go_fmt_fail_silently = 1
+
+" let rubocop check my syntax
+let g:syntastic_ruby_checkers          = ['rubocop', 'mri']
+let g:syntastic_ruby_rubocop_exec      = '~/.rbenv/shims/ruby'
+" let g:syntastic_ruby_rubocop_args = "--my --args --here" " waiting for param
 
 """""" map
 " window movements
